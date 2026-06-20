@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+Sitemap: https://hollypowell.law/sitemap.xml
+
+# Allow major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
