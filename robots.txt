@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /assets/
 
-Sitemap: https://hollypowell.law/sitemap.xml
+Sitemap: https://hollypowelllaw.com/sitemap.xml
 
 # Allow major search engines
 User-agent: Googlebot
