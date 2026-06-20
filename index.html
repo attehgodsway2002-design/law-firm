@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Holly Powell Law — expert legal counsel in criminal defence, personal injury, and family law. Based in Dornoch, Scotland.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>Holly Powell Law | Criminal Defence, Personal Injury & Family Law</title>
+  <style>
+    /* Index-page extras */
+    .hero-slider { position: relative; }
+    .hero-slide {
+      display: none; min-height: 100vh;
+      align-items: center; background-size: cover;
+      background-position: center top; position: relative;
+    }
+    .hero-slide:first-child { display: flex; }
+    .hero-slide::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to right, rgba(10,10,35,0.84) 0%, rgba(10,10,35,0.5) 55%, rgba(10,10,35,0.15) 100%);
+    }
+    .hs1 { background-image: url('assets/img/slide-1.jpg'); }
+    .hs2 { background-image: url('assets/img/slide-2.jpg'); background-position: center 20%; }
+
+    .features-strip { background: var(--dark2); padding: 0; }
+    .features-strip .row { margin: 0; }
+    .feature-item {
+      padding: 36px 30px; border-right: 1px solid rgba(255,255,255,0.07);
+      display: flex; align-items: flex-start; gap: 18px;
+    }
+    .feature-item:last-child { border-right: none; }
+    .feature-item .f-icon {
+      width: 50px; height: 50px; flex-shrink: 0;
+      background: rgba(184,151,42,0.12); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .feature-item .f-icon svg { width: 24px; height: 24px; }
+    .feature-item h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 5px;
+    }
+    .feature-item p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.5; }
+  </style>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader">
+  <div class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<div class="navbar-area">
+  <!-- Mobile -->
+  <div class="mobile-nav">
+    <a href="index.html" class="logo-svg-wrap">
+      <div class="logo-crest">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 6l9-3 9 3v6c0 5-4 8.5-9 10C7 19 3 15.5 3 12V6z"/>
+          <path d="M9 12l2 2 4-4"/>
+        </svg>
+      </div>
+      <div class="logo-wordmark">
+        <span class="firm-name">Holly Powell</span>
+        <span class="firm-tag">Law Firm</span>
+      </div>
+    </a>
+    <button class="hamburger-btn" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav-menu" id="mobileNavMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="practice.html">Practice Area</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Desktop -->
+  <div class="lovells-nav-style-one">
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <a class="brand" href="index.html">
+          <div class="logo-svg-wrap">
+            <div class="logo-crest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 6l9-3 9 3v6c0 5-4 8.5-9 10C7 19 3 15.5 3 12V6z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <div class="logo-wordmark">
+              <span class="firm-name">Holly Powell</span>
+              <span class="firm-tag">Law Firm</span>
+            </div>
+          </div>
+        </a>
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="practice.html" class="nav-link">Practice Area</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="others-option">
+          <span>hollyw.law@mail.com</span>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- HERO SLIDER -->
+<div class="hero-slider" style="margin-top: 0;">
+  <div class="hero-slide hs1">
+    <img class="hero-slide-bg" src="assets/img/slide-1.jpg" alt="Law firm office background">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <p class="top-title">We are here to help</p>
+        <h1>Ready to fight for<br><span>justice</span> on your behalf</h1>
+        <a class="default-btn" href="contact.html">Free Consultation</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-slide hs2">
+    <img class="hero-slide-bg" src="assets/img/ratherslide.jpg" alt="Gavel and law books background">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <p class="top-title">We are here to help</p>
+        <h1>Providing sensitive support<br>and <span>practical solutions</span></h1>
+        <a class="default-btn" href="contact.html">Free Consultation</a>
+      </div>
+    </div>
+  </div>
+  <div class="slider-dots">
+    <button class="slider-dot active"></button>
+    <button class="slider-dot"></button>
+  </div>
+</div>
+
+<!-- FEATURES STRIP -->
+<div class="features-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="feature-item fade-in">
+          <div class="f-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Proven Track Record</h4>
+            <p>Choosing a lawyer with a proven record helps ensure a successful resolution in your case.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="feature-item fade-in">
+          <div class="f-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Dedication</h4>
+            <p>Holly Powell won't accept the first offer or take the easy path — she fights until the outcome is right for you.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="feature-item fade-in">
+          <div class="f-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="5"/>
+              <path d="M3 21v-2a9 9 0 0 1 18 0v2"/>
+            </svg>
+          </div>
+          <div>
+            <h4>15+ Years' Experience</h4>
+            <p>Holly's depth of experience across a broad range of legal matters is an asset she wields for every client.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT AREA -->
+<section class="about-area ptb-100">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="about-content-wrap mr-0 fade-in">
+          <span>about us</span>
+          <h2>Law Firm Devoted to Our Clients</h2>
+          <p>Many lawyers allow a case to languish until it becomes a priority, or settle for the first offer to reach a quick resolution. Holly Powell won't sacrifice your well-being by taking the easy way out.</p>
+          <ul class="about-list">
+            <li>Expert Legal Service</li>
+            <li>Proven record of successful cases</li>
+            <li>Committed and highly experienced</li>
+            <li>Comprehensive support throughout</li>
+          </ul>
+          <a href="about.html" class="default-btn" style="display:inline-block;background:var(--primary);color:#fff;padding:13px 30px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:3px;">Discover More</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-img fade-in">
+          <img src="assets/img/the-firm.jpg" alt="Law Firm Devoted to Our Clients">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE AREAS -->
+<section class="practice-area-section">
+  <div class="container">
+    <div class="section-title-wrap fade-in">
+      <p class="sub-title">How Can We Help You</p>
+      <h2>Practice Area</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom:24px;">
+        <div class="practice-card fade-in">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Family Law</h3>
+          <p>We represent clients in family court proceedings and related negotiations, and draft important legal documents to protect your family's future.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom:24px;">
+        <div class="practice-card fade-in">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <h3>Criminal Defence</h3>
+          <p>One mistake should not define your life. We work to minimise the impact of criminal charges and provide an unwavering defence at every stage.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom:24px;">
+        <div class="practice-card fade-in">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Personal Injury</h3>
+          <p>Innocent parties are often harmed through no fault of their own. We help you secure the full and fair compensation you deserve on the road to recovery.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom:24px;">
+        <div class="practice-card fade-in">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 8v4l3 3"/>
+            </svg>
+          </div>
+          <h3>Juvenile Crimes</h3>
+          <p>We work with young offenders so that mistakes made as a minor do not follow them into adult life, keeping futures intact.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom:24px;">
+        <div class="practice-card fade-in">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
+            </svg>
+          </div>
+          <h3>External Counsel Services</h3>
+          <p>On-demand in-house legal counsel for businesses — handling day-to-day legal matters as senior solicitor on a flexible, cost-effective basis.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom:24px;">
+        <div class="practice-card fade-in">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <h3>Fraud</h3>
+          <p>Penalties for fraud-related charges can be severe. We work to reach a just resolution that minimises fallout and protects your reputation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT BANNER -->
+<section class="contact-banner ptb-100">
+  <div class="container">
+    <div class="contact-banner-title fade-in">
+      <h1>A problem-solving law firm offering quality advice combined with exceptional client service.</h1>
+      <a class="default-btn" href="contact.html">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTER STRIP -->
+<section class="counter-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="counter-box fade-in">
+          <h2><span class="count-up" data-target="98" data-suffix="%">0%</span></h2>
+          <p>Satisfied Clients</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="counter-box fade-in">
+          <h2><span class="count-up" data-target="500" data-suffix="+">0+</span></h2>
+          <p>Client Consultations</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="counter-box fade-in">
+          <h2><span class="count-up" data-target="15" data-suffix="+">0+</span></h2>
+          <p>Years Experience</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="counter-box fade-in">
+          <h2>£<span class="count-up" data-target="10" data-suffix="M+">0M+</span></h2>
+          <p>Recovered for Clients</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-top-area">
+  <div class="container">
+    <div class="row footer-wrapper">
+      <div class="col-lg-4 col-sm-6 col-md-6">
+        <div class="single-widget">
+          <div class="footer-logo-wrap">
+            <div class="logo-crest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#b8972a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 6l9-3 9 3v6c0 5-4 8.5-9 10C7 19 3 15.5 3 12V6z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <div class="logo-wordmark">
+              <span class="firm-name" style="color:#fff;">Holly Powell</span>
+              <span class="firm-tag">Law Firm</span>
+            </div>
+          </div>
+          <p>Holly Powell Law prides itself on doing things differently. When you book a consultation, you speak directly with Holly — never a paralegal or a salesperson. We do things the right way, not the easy way.</p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-6 col-md-6">
+        <div class="single-widget single-widgets">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="practice.html">Practice Area</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="single-widget single-widgetss">
+          <h3>Practice Area</h3>
+          <ul>
+            <li><a href="practice.html">Family Law</a></li>
+            <li><a href="practice.html">Criminal Defence</a></li>
+            <li><a href="practice.html">Personal Injury</a></li>
+            <li><a href="practice.html">Juvenile Crimes</a></li>
+            <li><a href="practice.html">External Counsel</a></li>
+            <li><a href="practice.html">Fraud</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="single-widget">
+          <h3>Contact Us</h3>
+          <p style="color:rgba(255,255,255,0.55);font-size:14px;margin-bottom:14px;">4, Anderson Court, Dornoch IV25 3RT, Scotland, UK</p>
+          <div class="contact-item">
+            <p><strong>Email</strong><a href="mailto:hollyw.law@mail.com">hollyw.law@mail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<footer class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <p>Copyright &copy; 2025 Holly Powell Law. All rights reserved.</p>
+      </div>
+      <div class="col-lg-6 col-md-6" style="text-align:right;">
+        <p style="color:rgba(255,255,255,0.35);">Regulated by the Law Society of Scotland</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Go Top -->
+<div class="go-top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</div>
+
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
